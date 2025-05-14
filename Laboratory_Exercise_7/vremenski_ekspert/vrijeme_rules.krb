@@ -2,21 +2,21 @@
 
 ponesi_kabanicu
     foreach
-        vrijeme.pada_kisa(True)
-        vrijeme.puse_vjetar(True)
+        vrijeme.pada_kisa(true)
+        vrijeme.puse_vjetar(true)
     assert
         vrijeme.ponesi(kabanicu)
 
 ponesi_kisobran
     foreach
-        vrijeme.pada_kisa(True)
-        vrijeme.puse_vjetar(False)
+        vrijeme.pada_kisa(true)
+        vrijeme.puse_vjetar(false)
     assert
         vrijeme.ponesi(kisobran)
 
 ponesi_nista
     foreach
-        vrijeme.pada_kisa(False)
-        vrijeme.puse_vjetar(False)
+        vrijeme.pada_kisa(false)
+        vrijeme.puse_vjetar(false)
     assert
         vrijeme.ponesi(nista)
