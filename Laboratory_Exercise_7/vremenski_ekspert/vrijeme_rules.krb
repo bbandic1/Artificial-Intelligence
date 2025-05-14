@@ -1,0 +1,22 @@
+# Pravila za preporuku šta ponijeti na osnovu vremena
+
+ponesi_kabanicu
+    foreach
+        vrijeme.pada_kisa(True)
+        vrijeme.puse_vjetar(True)
+    assert
+        vrijeme.ponesi(kabanicu)
+
+ponesi_kisobran
+    foreach
+        vrijeme.pada_kisa(True)
+        vrijeme.puse_vjetar(False)
+    assert
+        vrijeme.ponesi(kisobran)
+
+ponesi_nista
+    foreach
+        vrijeme.pada_kisa(False)
+        vrijeme.puse_vjetar(False)
+    assert
+        vrijeme.ponesi(nista)

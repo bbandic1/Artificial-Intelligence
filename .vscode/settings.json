@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Laboratory_Exercise_7/pyke-1.1.1/examples/family_relations",
+        "./Laboratory_Exercise_7/pyke-1.1.1"
+    ]
+}
