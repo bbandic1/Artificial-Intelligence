@@ -1,0 +1,22 @@
+# pitanja.kqb
+
+# Pitanje 1: Da li pada kiša?
+kisa($odg_kisa)
+    Pada li kisa?
+    ---
+    $odg_kisa = yn
+
+# Pitanje 2: Da li je vjetrovito?
+vjetar($odg_vjetar)
+    Puse li vjetar?
+    ---
+    $odg_vjetar = yn
+
+# Pitanje 3: Vanredna situacija (Multiple Choice)
+vanredna_situacija($odg_situacija)
+    Sta se trenutno vani desava od navedenog?
+    ---
+    $odg_situacija = select_1
+        1: Poplava se desila
+        2: Vlada pandemija
+        3: Nema posebnih vanrednih situacija (ni poplava ni pandemija)

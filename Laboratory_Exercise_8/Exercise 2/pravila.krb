@@ -1,0 +1,22 @@
+# pravila.krb
+
+# Pravilo 1: Ako pada kiša i puše vjetar, ponesi kabanicu.
+ponesi_kabanicu
+    use sta_ponijeti(kabanicu)  
+    when
+        cinjenice_vremena.pada_kisa(true)
+        cinjenice_vremena.puse_vjetar(true)
+
+# Pravilo 2: Ako pada kiša ali ne puše vjetar, ponesi kišobran.
+ponesi_kisobran
+    use sta_ponijeti(kisobran) 
+    when
+        cinjenice_vremena.pada_kisa(true)
+        cinjenice_vremena.puse_vjetar(false)
+
+# Pravilo 3: Ako ne pada ni kiša niti puše vjetar, nemoj ništa nositi.
+ponesi_nista
+    use sta_ponijeti(nista)    
+    when
+        cinjenice_vremena.pada_kisa(false)
+        cinjenice_vremena.puse_vjetar(false)

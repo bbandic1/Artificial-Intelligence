@@ -1,0 +1,36 @@
+# pravila_sa_pitanjima.krb
+
+# --- Pravila za vremenske prilike ---
+ponesi_kabanicu
+    use sta_ponijeti(kabanicu)  # UKLONJENO "savjet."
+    when
+        pitanja.kisa(true)
+        pitanja.vjetar(true)
+
+ponesi_kisobran
+    use sta_ponijeti(kisobran)  # UKLONJENO "savjet."
+    when
+        pitanja.kisa(true)
+        pitanja.vjetar(false)
+
+ponesi_nista_zbog_vremena
+    use sta_ponijeti(nista)     # UKLONJENO "savjet."
+    when
+        pitanja.kisa(false)
+        pitanja.vjetar(false)
+
+# --- Nova pravila za vanredne situacije ---
+ponesi_cizme
+    use sta_jos_ponijeti(gumene_cizme) # UKLONJENO "dodatni_savjet."
+    when
+        pitanja.vanredna_situacija(1) 
+
+ponesi_masku
+    use sta_jos_ponijeti(masku_za_lice) # UKLONJENO "dodatni_savjet."
+    when
+        pitanja.vanredna_situacija(2)
+
+nista_dodatno_zbog_situacije
+    use sta_jos_ponijeti(nista_dodatno) # UKLONJENO "dodatni_savjet."
+    when
+        pitanja.vanredna_situacija(3)

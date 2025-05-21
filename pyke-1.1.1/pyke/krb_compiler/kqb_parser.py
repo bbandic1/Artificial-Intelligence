@@ -534,7 +534,7 @@ class kqb_parser(object):
 
 def parse_kqb(filename):
     name = os.path.basename(filename)[:-4]
-    with open(filename, 'rU') as f:
+    with open(filename, 'r') as f:
         base = question_base.question_base(name)
         parser = kqb_parser(f)
         for question in parser.parse_questions():
